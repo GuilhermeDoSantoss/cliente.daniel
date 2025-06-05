@@ -955,3 +955,37 @@ body {
     display: block;
     margin-top: 0;
 }
+@media (max-width: 200px) {
+    .section-title {
+        text-align: center;
+    }
+}
+/* Ajuste responsivo para logo-text e logo-subtitle */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    .logo-subtitle {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1rem;
+    }
+    .logo-subtitle {
+        font-size: 0.65rem;
+    }
+}
+/* Responsividade para h3 dos serviços em telas pequenas */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-card h3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.7rem;
+    }
+}
