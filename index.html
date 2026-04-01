@@ -1,456 +1,687 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Martins - Empresário Esportivo</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Martins | Inside Football — Licensed Sports Agent</title>
+  <meta name="description" content="Daniel Martins — Licensed FIFA sports agent specializing in career management, international transfers, and contract negotiation for professional footballers." />
+  <meta name="keywords" content="football agent, sports agent, FIFA licensed, career management, international transfers, Brazil, Rio de Janeiro" />
+  <meta property="og:title" content="Daniel Martins | Inside Football" />
+  <meta property="og:description" content="Elite career management for professional footballers. Licensed. Trusted. Global." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">DANIEL MARTINS</span>
-                <span class="logo-subtitle">INSIDE FOOTBALL</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">HOME</a></li>
-                <li><a href="#sobre" class="nav-link">ABOUT</a></li>
-                <li><a href="#atletas" class="nav-link">ATHLETES</a></li>
-                <li><a href="#parceiros" class="nav-link">PARTNERS</a></li>
-            </ul>
-            
-                <button class="btn-contact">CONTACT US</button>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <img src="img/parceria.jpg" alt="Inside" class="hero-image">
-            <div class="hero-overlay"></div>
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-main">DANIEL MARTINS</span>
+        <span class="logo-tag">INSIDE FOOTBALL</span>
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home"      class="nav-link">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#athletes"  class="nav-link">Athletes</a></li>
+        <li><a href="#partners"  class="nav-link">Partners</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Contact Us</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <img src="img/parceria.jpg" alt="Football stadium" class="hero-img" />
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="hero-body">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">FIFA Licensed Agent · Rio de Janeiro</span>
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="ht-top">Career Management</span>
+        <span class="ht-mid">at the Highest</span>
+        <span class="ht-bot">Level of Football</span>
+      </h1>
+
+      <p class="hero-sub">
+        Connecting extraordinary talent to the world's<br />
+        most prestigious clubs — with integrity and precision.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <span>Work With Us</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#athletes" class="btn-ghost">
+          <span>Our Athletes</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <strong class="hstat-n" data-target="26">0</strong>
+          <span class="hstat-l">Athletes</span>
         </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-main">MANAGER</span>
-                    <span class="title-main">SPORTS</span>
-                    <span class="title-highlight">LICENSED</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Management, Advisory, and Mediation<br>
-                    of careers for <span class="highlight-text">professional athletes.</span>
-                </p>
-                <button class="btn-cta">
-                    <i class="fas fa-comments"></i>
-                    CONTACT US
-                </button>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <strong class="hstat-n" data-target="7">0</strong>
+          <span class="hstat-l">Countries</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <strong class="hstat-n" data-target="12">0</strong>
+          <span class="hstat-l">Contracts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="about-img-col">
+      <div class="about-img-wrap">
+        <img src="img/empresario3.png" alt="Daniel Martins" />
+        <div class="about-badge">
+          <i class="fas fa-certificate"></i>
+          <span>Licensed Agent</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text-col">
+      <p class="section-label">About</p>
+      <h2 class="section-heading">Daniel Martins<br /><em>do Carmo</em></h2>
+
+      <p class="about-lead">
+        Former professional footballer turned licensed sports agent — bringing a player's instinct to every negotiation.
+      </p>
+
+      <p class="about-body">
+        Born in Rio de Janeiro, Daniel played at Fluminense and gained international experience before transitioning to agent work. In January 2022, he orchestrated the transfer of Samir Caetano to Watford FC in England — a landmark deal that cemented his place in the industry.
+      </p>
+      <p class="about-body">
+        Today, Daniel leads Inside Football and co-manages Rivorelli Sports, one of Rio de Janeiro's most respected agencies. His philosophy is simple: a player's growth on the field must be matched by their development as a human being.
+      </p>
+
+      <div class="about-pillars">
+        <div class="pillar">
+          <i class="fas fa-handshake-simple"></i>
+          <span>Trust</span>
+        </div>
+        <div class="pillar">
+          <i class="fas fa-globe"></i>
+          <span>Global Reach</span>
+        </div>
+        <div class="pillar">
+          <i class="fas fa-shield-halved"></i>
+          <span>Integrity</span>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn-primary">
+        <span>Get in Touch</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════ -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-heading">Our Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="svc-card" data-index="01">
+          <div class="svc-icon"><i class="fas fa-file-signature"></i></div>
+          <h3>Contract Negotiation</h3>
+          <p>Full advisory support in contract negotiations with national and international clubs — always prioritising athlete welfare, transparency, and fair outcomes for all parties.</p>
+        </div>
+        <div class="svc-card" data-index="02">
+          <div class="svc-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Career Management</h3>
+          <p>Strategic long-term career planning with short, medium, and long-term goals — including academic development and language training to unlock global opportunities.</p>
+        </div>
+        <div class="svc-card" data-index="03">
+          <div class="svc-icon"><i class="fas fa-plane-departure"></i></div>
+          <h3>International Transfers</h3>
+          <p>Expertise in cross-border transfers backed by a global network of trusted partners, deep regulatory knowledge, and full focus on the athlete's well-being at destination.</p>
+        </div>
+        <div class="svc-card" data-index="04">
+          <div class="svc-icon"><i class="fas fa-scale-balanced"></i></div>
+          <h3>Legal Advisory</h3>
+          <p>Specialised sports law support with a qualified legal team ensuring every deal is executed in full compliance with FIFA regulations and the athlete's best interests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ATHLETES
+  ══════════════════════════════════════════ -->
+  <section id="athletes" class="athletes">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">The Roster</p>
+        <h2 class="section-heading">Our Athletes</h2>
+      </div>
+
+      <div class="athletes-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="senior">Senior</button>
+        <button class="filter-btn" data-filter="youth">Youth</button>
+      </div>
+
+      <div class="athletes-grid">
+
+        <!-- SENIOR PLAYERS -->
+        <div class="athlete-card featured" data-category="senior">
+          <div class="ac-media">
+            <img src="img/samirnovo.jpg" alt="Samir Caetano" loading="lazy" />
+            <div class="ac-featured-tag">Featured</div>
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Samir Caetano</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Defender</span>
+              <span class="ac-age">30 yrs</span>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">ABOUT DANIEL MARTINS</h2>
-                    <div class="title-underline"></div>
-                    <p class="about-description">
-                        My name is Daniel Martins do Carmo, born in Rio de Janeiro. Passionate about football, I began my journey as a professional athlete, with stints at Fluminense and international experiences. This time on the field gave me a broad perspective of the sport, which made my transition to the backstage of football much smoother.
-                    After retiring as a player, I started working as a scout and currently operate as a football agent, focusing on the complete career management of each athlete. In January 2022, I took part in my first major negotiation — transferring my athlete Samir to Watford Football Club in England. This was a major milestone and marked my full immersion into this industry.
-                    Even though I’m young, I constantly strive to learn, improve, and evolve. Today, I’m the founder of a career management company and also a partner at Rivorelli Sports, a well-known sports agency in Rio de Janeiro.
-                    My goal goes beyond the sporting aspect — I aim to help athletes grow both as professionals and as human beings. I believe in relationships built on trust, mutual learning, and the construction of a solid future for everyone involved. After all, in football — as in life — we are always learning and reinventing ourselves.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="26">0</div>
-                            <div class="stat-label">Represented Athletes</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="7">0</div>
-                            <div class="stat-label">Countries Served</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-target="12">0</div>
-                            <div class="stat-label">Contracts Negotiated</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="img/empresario3.png" alt="Daniel" class="profile-image">
-                </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              AL-NAJMAH
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title">OUR SERVICES</h2>
-            <div class="title-underline"></div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Contract Negotiation</h3>
-                    <p>We provide complete advisory support in negotiating contracts with national and international clubs, always prioritizing, above all, the well-being of the athlete and their family. We value transparency, ethics, and responsibility throughout every stage of the process, seeking to balance the interests of the club and the agent. Our goal is to achieve a fair and beneficial agreement for all parties involved.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Career Management</h3>
-                    <p>Strategic planning of the athlete’s career, identifying opportunities and setting short, medium, and long-term goals. The athlete is required to be studying and maintaining good grades as an essential part of their development both on and off the field. In addition, an English course will be recommended so that the athlete can continue their education and expand future opportunities, ensuring they never stop improving academically.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>International Transfers</h3>
-                    <p>With expertise in international transfers, we operate with a global network of contacts and deep knowledge of regulatory standards. In every negotiation, we seek reliable local partners in the destination countries, ensuring each move is handled with total focus on the athlete’s well-being.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Legal Advisory</h3>
-                    <p>Specialized legal support in sports law, with all negotiations carried out in full compliance with regulations. The company has a highly qualified and trustworthy legal team dedicated to protecting the athlete’s interests at every stage.</p>
-                </div>
+        <div class="athlete-card" data-category="senior">
+          <div class="ac-media">
+            <img src="img/wel-silva.jpg" alt="Wellington Silva" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Wellington Silva</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Attacking Mid</span>
+              <span class="ac-age">32 yrs</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Athletes Section -->
-    <section id="atletas" class="athletes">
-        <div class="container">
-            <h2 class="section-title">OUR ATHLETES</h2>
-            <div class="title-underline"></div>
-            <div class="athletes-grid">
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/samirnovo.jpg" alt="Samir">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Samir Caetano</h3>
-                                <p>Defender - 30 years old</p>
-                                <span class="club">AL - NAJMAH</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/wel-silva.jpg" alt="Pedro Silva">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Wellington Silva</h3>
-                                <p>Attacking Midfielder - 32 years old</p>
-                                <span class="club">Qingdao Hainiu - China</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/lucas-gabriel.jpg" alt="Pedro Silva">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Lucas Gabriel</h3>
-                                <p>Defensive Midfielder - 24 years old</p>
-                                <span class="club">Al Sharq</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/miguel-gama2.jpg" alt="Lucas Costa">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Miguel Gama</h3>
-                                <p>Right Back - 11 years old</p>
-                                <span class="club">Flamengo - RJ</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/miguelzao2.jpg" alt="Rafael Oliveira">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Miguelzao Costa</h3>
-                                <p>Defender - 11 years old</p>
-                                <span class="club">Botafogo - RJ</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/kisvarda.jpg" alt="Pedro Silva">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Wellington Nem</h3>
-                                <p>Attacking Midfielder - 33 years old</p>
-                                <span class="club">Figuerense - Santa Catarina</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/denilsonnovo.jpg" alt="Denilson">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Denilson Rodrigues</h3>
-                                <p>Midfielder - 24 years old</p>
-                                <span class="club">Club Atlético Atenas</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/gabriel-olimpio.jpeg" alt="Gabriel Olimpio">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Gabriel Olímpio</h3>
-                                <p>Defensive Midfielder - 28 years old</p>
-                                <span class="club">Al Hala Bahrain</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/9c86e075-1a3d-4162-a597-e5c7a8577cdb.jpg" alt="Pedro Silva">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Bernardo Bezerra</h3>
-                                <p>Defensive Midfielder - 15 years old</p>
-                                <span class="club">Vila Nova - Goias</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/9afe7c75-0e38-43d3-8289-2f54150ef7bf.jpg" alt="Pedro Silva">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Pablo Vinícius</h3>
-                                <p>Right Winger - 26 years old</p>
-                                <span class="club">Al Sharq - Arábia Saudita</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/brenozag.jpg" alt="Breno">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Breno Venturim</h3>
-                                <p>Defender - 14 years old</p>
-                                <span class="club">Vasco da Gama - RJ</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/joao.jpg" alt="João">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>João Gabriel</h3>
-                                <p>Attacking Midfielder - 20 years old</p>
-                                <span class="club">Darmstadt - Alemanha</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/michael.jpg" alt="Michel">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Michel Estrela</h3>
-                                <p>Attacking Midfielder - 14 years old</p>
-                                <span class="club">Novo Horizontino - SP</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/marcelo.jpg" alt="Railan">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Raillan Silva</h3>
-                                <p>Midfielder - 14 years old</p>
-                                <span class="club">Novo Horizontino - SP</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/mathes.jpg" alt="Pedro Silva">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Samuel Silva</h3>
-                                <p>Striker - 11 years old</p>
-                                <span class="club">Botafogo - RJ</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/davi-sa.jpeg" alt="Davi Sá">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Davi Sá</h3>
-                                <p>Midfielder - 14 years old</p>
-                                <span class="club">Vasco da Gama - RJ</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/marcos-vinicius.jpg" alt="Marcos Vinicius">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Marcos Vinicius</h3>
-                                <p>Midfielder - 14 years old</p>
-                                <span class="club">Novorizontino - SP</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="athlete-card">
-                    <div class="athlete-image">
-                        <img src="img/matheus-alexandre.png" alt="Matheus Alexandre">
-                        <div class="athlete-overlay">
-                            <div class="athlete-info">
-                                <h3>Matheus Alexandre</h3>
-                                <p>Striker - 14 years old</p>
-                                <span class="club">Fluminense - RJ</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Qingdao Hainiu · China
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Partners Section -->
-    <section id="parceiros" class="partners">
-        <div class="container">
-            <h2 class="section-title">PARTNERS</h2>
-            <div class="title-underline"></div>
-            <div class="partners-grid">
-                <div class="partner-logo">
-                    <img src="img/parceriacbf.png" alt="FIFA">
-                </div>
-                <div class="partner-logo">
-                    <img src="img/parceria2.jpg" alt="CBF">
-                </div>
-                <div class="partner-logo">
-                    <img src="img/parceriafifa.png" alt="UEFA">
-                </div>
-                <div class="partner-logo">
-                    <img src="img/parceria3.jpg" alt="BERTOLUCCI">
-                </div>
-                <div class="partner-logo">
-                    <img src="img/parceria4.jpg" alt="VALADAO">
-                </div>
+        <div class="athlete-card" data-category="senior">
+          <div class="ac-media">
+            <img src="img/lucas-gabriel.jpg" alt="Lucas Gabriel" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Lucas Gabriel</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Def. Midfielder</span>
+              <span class="ac-age">24 yrs</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>CONTACT US</h2>
-                    <p>Ready to take your career to the next level?</p>
-                    <div class="contact-details">
-                        <div class="contact__item">
-                    
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>danielmartinsc.insidefootball@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Rio de Janeiro - RJ, Brazil</span>
-                        </div>
-                    </div>
-                    <div class="social-contact">
-                        <a href="#" class="social-btn" onclick="abrirWhatsapp()"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                        <a href="https://www.instagram.com/insidefootball.service" target="_blank" class="social-btn" onclick="abrirInstagram()"><i class="fab fa-instagram"></i> Instagram</a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Your Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Service Type</option>
-                                <option value="contrato">Contract Negotiation</option>
-                                <option value="carreira">Career Management</option>
-                                <option value="transferencia">Transfer</option>
-                                <option value="consultoria">Consulting</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">SEND MESSAGE</button>
-                    </form>
-                </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Al Sharq
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">DANIEL MARTINS</span>
-                    <span class="logo-subtitle">INSIDE FOOTBALL</span>
-                </div>
-                <p>&copy; 2025 Guilherme dos Santos | Software Engineer. All rights reserved.</p>
+        <div class="athlete-card" data-category="senior">
+          <div class="ac-media">
+            <img src="img/kisvarda.jpg" alt="Wellington Nem" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Wellington Nem</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Attacking Mid</span>
+              <span class="ac-age">33 yrs</span>
             </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Figueirense · SC
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="athlete-card" data-category="senior">
+          <div class="ac-media">
+            <img src="img/denilsonnovo.jpg" alt="Denilson Rodrigues" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Denilson Rodrigues</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Midfielder</span>
+              <span class="ac-age">24 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              C.A. Atenas
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="senior">
+          <div class="ac-media">
+            <img src="img/gabriel-olimpio.jpeg" alt="Gabriel Olímpio" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Gabriel Olímpio</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Def. Midfielder</span>
+              <span class="ac-age">28 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Al Hala · Bahrain
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="senior">
+          <div class="ac-media">
+            <img src="img/9afe7c75-0e38-43d3-8289-2f54150ef7bf.jpg" alt="Pablo Vinícius" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Pablo Vinícius</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Right Winger</span>
+              <span class="ac-age">26 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Al Sharq · Saudi Arabia
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="senior">
+          <div class="ac-media">
+            <img src="img/joao.jpg" alt="João Gabriel" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">João Gabriel</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Attacking Mid</span>
+              <span class="ac-age">20 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Darmstadt · Germany
+            </div>
+          </div>
+        </div>
+
+        <!-- YOUTH PLAYERS -->
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/miguel-gama2.jpg" alt="Miguel Gama" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Miguel Gama</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Right Back</span>
+              <span class="ac-age">11 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Flamengo · RJ
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/miguelzao2.jpg" alt="Miguelzao Costa" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Miguelzao Costa</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Defender</span>
+              <span class="ac-age">11 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Botafogo · RJ
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/9c86e075-1a3d-4162-a597-e5c7a8577cdb.jpg" alt="Bernardo Bezerra" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Bernardo Bezerra</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Def. Midfielder</span>
+              <span class="ac-age">15 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Vila Nova · GO
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/brenozag.jpg" alt="Breno Venturim" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Breno Venturim</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Defender</span>
+              <span class="ac-age">14 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Vasco da Gama · RJ
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/michael.jpg" alt="Michel Estrela" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Michel Estrela</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Attacking Mid</span>
+              <span class="ac-age">14 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Novorizontino · SP
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/marcelo.jpg" alt="Raillan Silva" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Raillan Silva</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Midfielder</span>
+              <span class="ac-age">14 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Novorizontino · SP
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/mathes.jpg" alt="Samuel Silva" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Samuel Silva</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Striker</span>
+              <span class="ac-age">11 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Botafogo · RJ
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/davi-sa.jpeg" alt="Davi Sá" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Davi Sá</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Midfielder</span>
+              <span class="ac-age">14 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Vasco da Gama · RJ
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/marcos-vinicius.jpg" alt="Marcos Vinicius" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Marcos Vinicius</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Midfielder</span>
+              <span class="ac-age">14 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Novorizontino · SP
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/matheus-alexandre.png" alt="Matheus Alexandre" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Matheus Alexandre</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Striker</span>
+              <span class="ac-age">14 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Fluminense · RJ
+            </div>
+          </div>
+        </div>
+
+        <div class="athlete-card" data-category="youth">
+          <div class="ac-media">
+            <img src="img/lucas-gabriel17.png" alt="Lucas Gabriel" loading="lazy" />
+          </div>
+          <div class="ac-info">
+            <div class="ac-name">Lucas Gabriel</div>
+            <div class="ac-meta">
+              <span class="ac-pos">Striker</span>
+              <span class="ac-age">17 yrs</span>
+            </div>
+            <div class="ac-club">
+              <i class="fas fa-location-dot"></i>
+              Fujairah FC
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PARTNERS
+  ══════════════════════════════════════════ -->
+  <section id="partners" class="partners">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label">Trusted By</p>
+        <h2 class="section-heading">Our Partners</h2>
+      </div>
+      <div class="partners-track-wrap">
+        <div class="partners-track">
+          <div class="partner-item"><img src="img/parceriacbf.png" alt="CBF" /></div>
+          <div class="partner-item"><img src="img/parceria2.jpg" alt="Partner" /></div>
+          <div class="partner-item"><img src="img/parceriafifa.png" alt="FIFA" /></div>
+          <div class="partner-item"><img src="img/parceria3.jpg" alt="Bertolucci" /></div>
+          <div class="partner-item"><img src="img/parceria4.jpg" alt="Valadao" /></div>
+          <!-- Duplicate for infinite loop -->
+          <div class="partner-item"><img src="img/parceriacbf.png" alt="CBF" /></div>
+          <div class="partner-item"><img src="img/parceria2.jpg" alt="Partner" /></div>
+          <div class="partner-item"><img src="img/parceriafifa.png" alt="FIFA" /></div>
+          <div class="partner-item"><img src="img/parceria3.jpg" alt="Bertolucci" /></div>
+          <div class="partner-item"><img src="img/parceria4.jpg" alt="Valadao" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <p class="section-label">Let's Talk</p>
+        <h2 class="section-heading">Ready to take your career to the next level?</h2>
+        <p class="contact-sub">
+          Whether you're an athlete seeking elite representation or a club looking for top talent — we're one message away.
+        </p>
+
+        <div class="contact-details">
+          <a href="mailto:insidefootball@gmail.com" class="cdetail">
+            <i class="fas fa-envelope"></i>
+            <span>insidefootball@gmail.com</span>
+          </a>
+          <div class="cdetail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Rio de Janeiro — RJ, Brazil</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <button class="csocial whatsapp" onclick="abrirWhatsapp()">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </button>
+          <a href="https://www.instagram.com/insidefootball.service" target="_blank" rel="noopener noreferrer" class="csocial instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" name="phone" placeholder="+55 21 9 0000-0000" />
+            </div>
+            <div class="form-group">
+              <label>Service</label>
+              <select name="service" required>
+                <option value="">Select service</option>
+                <option value="contract">Contract Negotiation</option>
+                <option value="career">Career Management</option>
+                <option value="transfer">International Transfer</option>
+                <option value="legal">Legal Advisory</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Tell us about your goals..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-main">DANIEL MARTINS</span>
+        <span class="logo-tag">INSIDE FOOTBALL</span>
+        <p>Elite career management for professional footballers. Licensed. Trusted. Global.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#athletes">Athletes</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <button class="footer-soc-btn" onclick="abrirWhatsapp()" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </button>
+        <a href="https://www.instagram.com/insidefootball.service" target="_blank" rel="noopener noreferrer" class="footer-soc-btn" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Inside Football — Daniel Martins. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="float-whatsapp" onclick="abrirWhatsapp()" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
